@@ -219,12 +219,12 @@ class NormalNode(object):
 
         try:
             for node in to_run_exec:
-                mod = ast.Module([node])
+                mod = ast.Module([node], type_ignores=[])
                 code = compile(mod, '<stdin>', 'exec')
                 exec(code, global_dict)
 
             for node in to_run_single:
-                mod = ast.Interactive([node])
+                mod = ast.Interactive([node], type_ignores=[])
                 code = compile(mod, '<stdin>', 'single')
                 exec(code, global_dict)
         except:
@@ -436,7 +436,7 @@ def magic_table(name):
     for row in value:
         cols = []
         data.append(cols)
-        
+
         if 'Row' == row.__class__.__name__:
             row = row.asDict()
 
