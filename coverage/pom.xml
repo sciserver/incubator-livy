@@ -52,19 +52,7 @@
 
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>livy-core_2.11</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>${project.groupId}</groupId>
       <artifactId>livy-core_2.12</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>livy-repl_2.11</artifactId>
       <version>${project.version}</version>
     </dependency>
 
@@ -86,11 +74,6 @@
       <version>${project.version}</version>
     </dependency>
 
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>livy-scala-api_2.11</artifactId>
-      <version>${project.version}</version>
-    </dependency>
 
     <dependency>
       <groupId>${project.groupId}</groupId>
